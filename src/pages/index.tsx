@@ -35,7 +35,9 @@ const Home: NextPage = () => {
       <main className={"gap-4 flex min-h-screen flex-col items-center justify-center bg-indigo-500 text-white"}>
         <h1>Welcome to a build manager</h1>
 
-        <Link href="/submit-build">Submit Build</Link>
+        <Link href="/Submit">Submit Build</Link>
+        <Link href="/builds">View Builds</Link>
+
 
       </main>
 

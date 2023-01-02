@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import React, { useState } from "react";
 import { trpc } from "../utils/trpc";
+import Link from "next/link";
 
 const BuildsPage: NextPage = () => {
 
@@ -16,6 +17,8 @@ const BuildsPage: NextPage = () => {
       </Head>
       <main className={"gap-4 flex min-h-screen flex-col items-center justify-center bg-indigo-500 text-white"}>
         <h1>Builds</h1>
+
+        <Link href="/">Menu</Link>
 
         <table>
           <thead>

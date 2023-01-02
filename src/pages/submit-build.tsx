@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { trpc } from "../utils/trpc";
 import { useRouter } from "next/router";
 
-const Home: NextPage = () => {
+const SubmitBuildPage: NextPage = () => {
   const createBuildMutation = trpc.builds.createBuild.useMutation();
 
   const [matchUp, setMatchUp] = useState("");
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       matchUp,
       build,
     });
-    await router.push('/');
+    await router.push('/builds');
   }
 
   return (
@@ -61,4 +61,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default SubmitBuildPage;
