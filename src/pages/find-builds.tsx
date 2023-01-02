@@ -19,13 +19,13 @@ const FindBuilds: NextPage = () => {
 
         <ul className="grid grid-cols-3 gap-4">
           <li>
-            <Card imageSrc={"./public/fraunhofer.jpg"}></Card>
+            <Card imageSrc={"./fraunhofer.jpg"}></Card>
           </li>
           <li>
-            <Card imageSrc={"public/fraunhofer.jpg"}></Card>
+            <Card imageSrc={"./fraunhofer.jpg"}></Card>
           </li>
           <li>
-            <Card imageSrc={"public/fraunhofer.jpg"}></Card>
+            <Card imageSrc={"./fraunhofer.jpg"}></Card>
           </li>
         </ul>
 
