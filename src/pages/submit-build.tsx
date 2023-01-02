@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       matchUp,
       build,
     });
-    router.push('/');
+    await router.push('/');
   }
 
   return (

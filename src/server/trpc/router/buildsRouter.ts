@@ -11,6 +11,11 @@ export const buildsRouter = router({
           ...input,
         },
       })
-      return build
+      return build;
     }),
+  getBuilds: publicProcedure
+    .query(async ({ ctx }) => {
+      const build = await ctx.prisma.builderOrder.findMany()
+      return build;
+    })
 });
