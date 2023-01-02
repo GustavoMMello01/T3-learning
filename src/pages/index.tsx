@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import React, { useState } from "react";
 import { trpc } from "../utils/trpc";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const createBuildMutation = trpc.builds.createBuild.useMutation();
@@ -32,32 +33,10 @@ const Home: NextPage = () => {
       {/*</main>*/}
 
       <main className={"gap-4 flex min-h-screen flex-col items-center justify-center bg-indigo-500 text-white"}>
-        <h1>Submit a Build Order</h1>
-        <form
-          className="flex flex-col gap-2"
-          onSubmit={handleSubmitBuildOrder}
-        >
-          <label htmlFor={"match-up-select"}> Match up </label>
-          <select
-            className="text-black"
-            value={matchUp}
-            onChange={e => setMatchUp(e.target.value)}
-            id="match-up-select" required
-          >
-            <option value="ZvT">ZvT</option>
-            <option value="zvp">ZvP</option>
-            <option value="zvz">ZvZ</option>
-          </select>
+        <h1>Welcome to a build manager</h1>
 
-          <textarea
-            required
-            className="text-black p-2"
-            value={build}
-            onChange={(e) => setBuild(e.target.value)}
-          />
+        <Link href="/submit-build">Submit Build</Link>
 
-          <button className="bg-blue-500 text-sm text-white p-2 rounded-md transition hover:bg-blue-600">Submit</button>
-        </form>
       </main>
 
     </>
