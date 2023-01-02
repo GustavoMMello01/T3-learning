@@ -1,8 +1,6 @@
 import { z } from "zod";
 
 import { router, publicProcedure } from "../trpc";
-import { mockSession } from "next-auth/client/__tests__/helpers/mocks";
-import name = mockSession.user.name;
 
 export const exampleRouter = router({
   hello: publicProcedure
@@ -12,9 +10,7 @@ export const exampleRouter = router({
         greeting: `Hello ${input?.text ?? "world"}`,
       };
     }),
-  getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.shoppingItem.create(
-
-    );
-  }),
+  // getAll: publicProcedure.query(({ ctx }) => {
+  //   return ctx.prisma.ShoppingItem.findMany();
+  // }),
 });
