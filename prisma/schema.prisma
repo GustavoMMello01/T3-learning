@@ -11,11 +11,16 @@ datasource db {
   relationMode  = "prisma"
 }
 
-model Example {
+model ShoppingItem {
   id        String   @id @default(cuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name String 
-  checked Boolean
+  checked Boolean @default(false)
 }
 
+model BuilderOrder {
+  id        String   @id @default(cuid())
+  matchUp   String
+  build     String
+}
