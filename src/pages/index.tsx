@@ -25,14 +25,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/*<main className="mx-auto my-12 max-w-3xl">*/}
-      {/*  <div className="flex justify-between">*/}
-      {/*    <h2 className="text-2x1 font-semi-bold">Shopping List</h2>*/}
-      {/*    <button type="button" className="bg-blue-500 text-sm text-white p-2 rounded-md transition hover:bg-blue-600">Add item</button>*/}
-      {/*  </div>*/}
-      {/*</main>*/}
-
-      <main className={"gap-4 flex min-h-screen flex-col items-center justify-center bg-indigo-500 text-white"}>
+      <main className={"gap-4 flex min-h-screen flex-col items-center justify-center text-white text-black dark:text-white dark:bg-gray-800"}>
         <h1>Welcome to a build manager</h1>
 
         <Link href="/Submit">Submit Build</Link>
