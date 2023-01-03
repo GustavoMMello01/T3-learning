@@ -13,9 +13,20 @@ export const buildsRouter = router({
       })
       return build;
     }),
-  getBuilds: publicProcedure
-    .query(async ({ ctx }) => {
-      const build = await ctx.prisma.builderOrder.findMany()
+  getBuildsByMatchUp: publicProcedure
+    .input(z.object({matchUp: z.string()}))
+    .query(async ({ ctx, input }) => {
+      const build = await ctx.prisma.builderOrder.findMany({
+        where: {
+          matchUp: input.matchUp,
+        }
+      })
       return build;
-    })
+    }),
+  getBuilds: publicProcedure
+    .query( async ({ ctx }) => {
+      const build = await ctx.prisma.builderOrder.findMany();
+
+      return build;
+    }),
 });

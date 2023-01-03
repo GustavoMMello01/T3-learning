@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { RaceCard } from "../../../Components/RaceCard";
+import { RaceCard } from "../../../../Components/RaceCard";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 
@@ -24,13 +24,13 @@ const FindBuilds: NextPage = () => {
         </div>
         <ul className="grid grid-cols-3 gap-4">
           <li>
-            <RaceCard href={`/races/zerg/match-ups`} raceImageSrc={"./fraunhofer.jpg"} raceName="Zerg" isOpponent={true} ></RaceCard>
+            <RaceCard href={`/races/zerg/match-ups/zerg`} raceImageSrc={"./fraunhofer.jpg"} raceName="Zerg" isOpponent={true} ></RaceCard>
           </li>
           <li>
-            <RaceCard href={`/races/proto/match-ups`} raceImageSrc={"./fraunhofer.jpg"} raceName="Proto" isOpponent={true}></RaceCard>
+            <RaceCard href={`/races/proto/match-ups/proto`} raceImageSrc={"./fraunhofer.jpg"} raceName="Proto" isOpponent={true}></RaceCard>
           </li>
           <li>
-            <RaceCard href={`/races/terran/match-ups`} raceImageSrc={"./fraunhofer.jpg"} raceName="Terran" isOpponent={true}></RaceCard>
+            <RaceCard href={`/races/terran/match-ups/terran`} raceImageSrc={"./fraunhofer.jpg"} raceName="Terran" isOpponent={true}></RaceCard>
           </li>
         </ul>
 
