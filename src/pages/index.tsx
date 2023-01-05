@@ -3,6 +3,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 import { trpc } from "../utils/trpc";
 import Link from "next/link";
+import { Card } from "../Components/Card";
 
 const Home: NextPage = () => {
   const createBuildMutation = trpc.builds.createBuild.useMutation();
@@ -26,10 +27,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={"gap-4 flex min-h-screen flex-col items-center justify-center text-white text-black dark:text-white dark:bg-gray-800"}>
-        <h1>Welcome to a build manager</h1>
+        {/*<h1>Welcome to a build manager</h1>*/}
 
-        <Link href="/Submit">Submit Build</Link>
-        <Link href="/builds">View Builds</Link>
+        <Card/>
+        {/*<Link href="/Submit">Submit Build</Link>*/}
+        {/*<Link href="/builds">View Builds</Link>*/}
 
 
       </main>
