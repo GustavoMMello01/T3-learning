@@ -1,51 +1,55 @@
 import React from "react";
+import AddIcon from '@mui/icons-material';
 
 export const Card = () => {
   return (
 
-    <div
-      className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-      <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+    <div className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-6">
+      <h5 className="mb-3 font-semibold text-gray-900 text-xl ">
         Manufacturer
       </h5>
-      <p className="text-sm font-normal text-gray-500 dark:text-gray-400">Connect with one of our available wallet
-        providers or create a new one.</p>
+      <p className="text-sm font-normal text-gray-500">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ligula eget arcu maximus mattis.
+      </p>
       <ul className="my-4 space-y-3">
         <li>
           <a href="#"
-             className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+             className="flex items-center p-3 font-bold rounded-lg text-white group hover:shadow bg-gray-600 hover:bg-gray-500 text-white">
 
             <span className="flex-1 ml-3 whitespace-nowrap">MetaMask</span>
-            <span
-              className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+            <div className="inline-flex items-center justify-center pr-5">
+              <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
+            </div>
           </a>
         </li>
         <li>
           <a href="#"
-             className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+             className="flex items-center p-3 font-bold rounded-lg text-white group hover:shadow bg-gray-600 hover:bg-gray-500 text-white">
 
-            <span className="flex-1 ml-3 whitespace-nowrap">Coinbase Wallet</span>
+            <span className="flex-1 ml-3 whitespace-nowrap">MetaMask</span>
+            <div className="inline-flex items-center justify-center pr-5">
+              <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
+            </div>
           </a>
         </li>
         <li>
           <a href="#"
-             className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+             className="flex items-center p-3 font-bold rounded-lg text-white group hover:shadow bg-gray-600 hover:bg-gray-500 text-white">
 
-            <span className="flex-1 ml-3 whitespace-nowrap">Opera Wallet</span>
+            <span className="flex-1 ml-3 whitespace-nowrap">MetaMask</span>
+            <div className="inline-flex items-center justify-center pr-5">
+              <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
+            </div>
           </a>
         </li>
         <li>
           <a href="#"
-             className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+             className="flex items-center p-3 font-bold rounded-lg text-white group hover:shadow bg-gray-600 hover:bg-gray-500 text-white">
 
-            <span className="flex-1 ml-3 whitespace-nowrap">WalletConnect</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"
-             className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-
-            <span className="flex-1 ml-3 whitespace-nowrap">Fortmatic</span>
+            <span className="flex-1 ml-3 whitespace-nowrap">MetaMask</span>
+            <div className="inline-flex items-center justify-center pr-5">
+              <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
+            </div>
           </a>
         </li>
       </ul>
