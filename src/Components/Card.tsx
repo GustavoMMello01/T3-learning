@@ -3,7 +3,6 @@ import AddIcon from '@mui/icons-material';
 
 export const Card = () => {
   return (
-
     <div className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-6">
       <h5 className="mb-3 font-semibold text-gray-900 text-xl ">
         Manufacturer
@@ -15,7 +14,6 @@ export const Card = () => {
         <li>
           <a href="#"
              className="flex items-center p-3 font-bold rounded-lg text-white group hover:shadow bg-gray-600 hover:bg-gray-500 text-white">
-
             <span className="flex-1 ml-3 whitespace-nowrap">MetaMask</span>
             <div className="inline-flex items-center justify-center pr-5">
               <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
@@ -53,12 +51,6 @@ export const Card = () => {
           </a>
         </li>
       </ul>
-      <div>
-        <a href="#"
-           className="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
-
-          Why do I need to connect with my wallet?</a>
-      </div>
     </div>
   )
 }

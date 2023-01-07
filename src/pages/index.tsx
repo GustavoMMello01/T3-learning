@@ -26,12 +26,28 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={"gap-4 flex min-h-screen flex-col items-center justify-center text-white text-black dark:text-white dark:bg-gray-800"}>
-        {/*<h1>Welcome to a build manager</h1>*/}
-
+      <main className={"gap-4 flex min-h-screen flex-col items-center justify-center text-white"}>
         <Card/>
-        {/*<Link href="/Submit">Submit Build</Link>*/}
-        {/*<Link href="/builds">View Builds</Link>*/}
+        <div className="w-full p-4 bg-white border rounded-lg shadow-md sm:p-6">
+          <h5 className="mb-3 font-semibold text-gray-900 text-xl ">
+            Manufacturer
+          </h5>
+          <p className="text-sm font-normal text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut ligula eget arcu maximus mattis.
+          </p>
+          <ul className="my-4 space-y-3">
+            <li>
+              <div className="text-white  bg-gray-600">
+                <h1>OLA</h1>
+                <div className="inline-flex items-center justify-center pr-5">
+                  <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full p-2">+</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
 
 
       </main>
